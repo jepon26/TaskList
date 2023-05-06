@@ -11,6 +11,16 @@ html, body {
   margin-top: 40px;
 }
 
+
+h1 {
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
 .todo-app{
   display: flex;
   flex-wrap: wrap;
@@ -30,4 +40,16 @@ html, body {
 .todo-logo{
   width: 400px;
   height: 150px;
+}
+
+
+.main-todo-list{
+  width: 600px;
+  height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  justify-content: center;
+  border-radius: 26px;
+
 }
