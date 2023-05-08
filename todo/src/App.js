@@ -1,5 +1,6 @@
 import logo from './img//todologo.png';
 import './App.css';
+import Todos from './components/Todos';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         </div>
          <div className='main-todo-list'>
           <h1>My ToDos</h1>
-          
+          <Todos/>
          </div>
     </div>
   );
