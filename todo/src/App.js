@@ -10,7 +10,7 @@ function App() {
         </div>
          <div className='main-todo-list'>
           <h1>My ToDos</h1>
-          <Todos/>
+          <Todos text='Learn to coding'/>
          </div>
     </div>
   );

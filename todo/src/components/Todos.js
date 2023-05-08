@@ -1,15 +1,16 @@
-import React from 'react'
-import '../CSS/Todos.css'
+import React from 'react';
+import '../CSS/Todos.css';
+import {AiTwotoneDelete} from 'react-icons/ai';
 
 
-function Todos({text}){
+function Todos({text, completed}){
     return (
-      <div className='todo-container'>
+      <div className={completed ? 'todo-container completed' : 'todo-container' }>
         <div className='todo-text'>
             {text}
         </div>
-        <div className='todo-icon'>
-            Delete
+        <div className='todo-container-icons'>
+            <AiTwotoneDelete className='todo-icon'/>
         </div>
       </div>
     );
