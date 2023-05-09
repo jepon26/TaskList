@@ -1,6 +1,6 @@
 import logo from './img//todologo.png';
 import './App.css';
-import Form from './components/Form.js';
+import Todolist from './components/Todolist';
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
         </div>
          <div className='main-todo-list'>
           <h1>My ToDos</h1>
-          <Form/>
+          <Todolist/>
          </div>
     </div>
-  );
+  )
 }
 
 export default App;
