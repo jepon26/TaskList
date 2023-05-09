@@ -1,6 +1,6 @@
 import logo from './img//todologo.png';
 import './App.css';
-import Todos from './components/Todos';
+import Form from './components/Form.js';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         </div>
          <div className='main-todo-list'>
           <h1>My ToDos</h1>
-          <Todos text='Learn to coding'/>
+          <Form/>
          </div>
     </div>
   );
