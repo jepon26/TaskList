@@ -15,7 +15,7 @@ function Todolist(){
         Todos.text = Todos.text.trim();
 
         const UpdatedTodos = [Todos, ...Todos];
-        setTodos(UpdatedTodos);
+        setTodos(UpdatedTodos6);
       }
     }
 
