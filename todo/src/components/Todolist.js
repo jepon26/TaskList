@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Todoform from './Todoform';
-import '../CSS/Todolist.css'
+import '../CSS/Todolist.css';
+import Todos from './Todos'
 
 
 function Todolist(){
@@ -8,9 +9,19 @@ function Todolist(){
 
     const[Todos, setTodos] = useState([]);
 
+
+    const addTodo = Todos => {
+      if(Todos.text.trim()){
+        Todos.text = Todos.text.trim();
+
+        const UpdatedTodos = [Todos, ...Todos];
+        setTodos(UpdatedTodos);
+      }
+    }
+
     return (
         <>
-         <Todoform/>
+         <Todoform onSubmit={addTodo}/>
          <div className='todo-list-container'>
               {
                 Todos.map((Todos) => 
