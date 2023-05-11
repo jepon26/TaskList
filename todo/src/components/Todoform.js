@@ -9,13 +9,12 @@ function Todoform (props){
 
      const handleChange = e => {
         setInput(e.target.value);
-        console.log(e.target.value);
      }
 
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log('Sending form')
+        
 
         
         const newTodos ={
@@ -39,7 +38,7 @@ props.onSubmit(newTodos);
             <button className='todo-button'>Add todo</button>
         </form>
 
-    )
+    );
 }
 
 

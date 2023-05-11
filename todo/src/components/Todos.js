@@ -8,7 +8,6 @@ function Todos({id, text, completed, completeTodos, deleteTodos}){
       <div className={completed ? 'todo-container completed' : 'todo-container' }>
         <div className='todo-text'
         onClick={() => completeTodos(id)}>
-          
             {text}
         </div>
         <div className='todo-container-icons'
